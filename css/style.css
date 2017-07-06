@@ -1,0 +1,36 @@
+/**/
+body {
+  background-color: #333; }
+
+.grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.gutters {
+  margin: -10px 0 30px -10px; }
+
+.gutters > .cell {
+  padding: 10px 0 0 10px; }
+
+.cell {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  /* 1 1 0%*/
+  /*flex-grow 1 flex-shrink 1
+            flex-basis
+          */ }
+
+.cell > div {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  padding: 10px; }
+
+.large {
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2; }
